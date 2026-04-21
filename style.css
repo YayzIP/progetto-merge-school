@@ -1,11 +1,32 @@
-#titolo{
+body {
+   background-color: lightgoldenrodyellow;
+}
+
+#titolo {
    color: darkred;
    padding-bottom: auto;
    text-align: center;
 }
 
-body{
+.linkWiki {
+   text-decoration: none;
+   color: #0645AD;
+   transition: color .15s ease;
+}
 
-background-color: lightgoldenrodyellow;
+.linkWiki:link {
+   color: #0645AD;
+}
 
+.linkWiki:visited {
+   color: #551A8B;
+}
+
+.linkWiki:hover {
+   color: #FF4500;
+   text-decoration: underline;
+}
+
+.linkWiki:active {
+   color: #B22222;
 }
