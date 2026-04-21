@@ -26,7 +26,7 @@ function ottieniListaMonumenti() {
 document.getElementById('btn-crea-tabella').addEventListener('click', () => {
     const lista = ottieniListaMonumenti();
     const container = document.getElementById('container-tabella');
-    
+
     // Pulizia vecchio contenuto
     container.innerHTML = '';
 
@@ -35,7 +35,7 @@ document.getElementById('btn-crea-tabella').addEventListener('click', () => {
 
     lista.forEach((monumento, index) => {
         const riga = tabella.insertRow();
-        
+
         const cellaIndex = riga.insertCell(0);
         cellaIndex.textContent = index + 1;
 
@@ -48,3 +48,20 @@ document.getElementById('btn-crea-tabella').addEventListener('click', () => {
 
     container.appendChild(tabella);
 });
+
+// Se l'array non esiste già, lo definiamo:
+window.monumenti = window.monumenti || [];
+
+/**
+ * Aggiunge un monumento all'array globale `monumenti`.
+ * monumento: { nome?: string, lat: number, lng: number, ... }
+ * restituisce l'array aggiornato.
+ */
+function aggiungiMonumentoArray(monumento) {
+    if (!monumento || typeof monumento.lat !== 'number' || typeof monumento.lng !== 'number') {
+        console.warn('Monumento non valido passato ad aggiungiMonumentoArray:', monumento);
+        return window.monumenti;
+    }
+    window.monumenti.push(monumento);
+    return window.monumenti;
+}
