@@ -1,12 +1,56 @@
-.h1{
 
-   color: darkred;
-   margin-left: auto;margin-right: auto;
-   padding-bottom: auto;
+h1{
+
+   color:rgba(253, 70, 24, 0.692);
+
 }
 
-.body{
+body {
+   background-color: darkkhaki;
+    font-family: sans-serif;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-background-color: burlywood;
+#map {
+    width: 100%;
+    height: 50vh;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
 
+.controls {
+    margin-bottom: 20px;
+}
+
+#btn-crea-tabella {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#btn-crea-tabella:hover {
+    background-color: #0056b3;
+}
+
+.tabella-monumenti {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.tabella-monumenti td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.tabella-monumenti tr:nth-child(even) {
+    background-color: #f9f9f9;
 }
