@@ -1,0 +1,114 @@
+body {
+   background-color: lightgoldenrodyellow;
+   font-family: sans-serif;
+   margin: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#titolo {
+   color: darkred;
+   padding-bottom: auto;
+   text-align: center;
+}
+
+#map {
+   width: 100%;
+   height: 50vh;
+   border-radius: 8px;
+   margin-bottom: 20px;
+}
+
+.controls {
+   margin-bottom: 20px;
+}
+
+#btn-crea-tabella {
+   padding: 10px 20px;
+   background-color: #007bff;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+#btn-crea-tabella:hover {
+   background-color: #0056b3;
+}
+
+.tabella-monumenti {
+   width: 100%;
+   max-width: 600px;
+   border-collapse: collapse;
+   margin-top: 10px;
+}
+
+.tabella-monumenti td {
+   border: 1px solid #ccc;
+   padding: 10px;
+   text-align: center;
+}
+
+.tabella-monumenti tr:nth-child(even) {
+   background-color: #f9f9f9;
+}
+
+.linkWiki {
+   text-decoration: none;
+   color: #0645AD;
+   transition: color .15s ease;
+}
+
+.linkWiki:link {
+   color: #0645AD;
+}
+
+.linkWiki:visited {
+   color: #551A8B;
+}
+
+.linkWiki:hover {
+   color: #FF4500;
+   text-decoration: underline;
+}
+
+.linkWiki:active {
+   color: #B22222;
+}
+
+.monumento-form {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   background: rgba(255, 255, 255, 0.95);
+   padding: 10px;
+   border-radius: 6px;
+   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+   z-index: 1000;
+   display: flex;
+   flex-direction: column;
+   min-width: 200px;
+   font-family: sans-serif;
+}
+
+.monumento-form input {
+   margin: 6px 0;
+   padding: 6px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+}
+
+.monumento-form button {
+   margin-top: 6px;
+   padding: 8px;
+   border: none;
+   background: #0078d4;
+   color: white;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+.monumento-form button#btnShowStats {
+   background: #555;
+}
